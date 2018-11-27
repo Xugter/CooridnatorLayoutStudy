@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.xugter.cooridnatorlayoutstudy.simpletitle.SimpleTitleActivity;
+import com.xugter.cooridnatorlayoutstudy.test.TestActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,5 +18,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void simpleTitle(View view) {
         startActivity(new Intent(this, SimpleTitleActivity.class));
+    }
+
+    public void test(View view) {
+        startActivity(new Intent(this, TestActivity.class));
     }
 }
