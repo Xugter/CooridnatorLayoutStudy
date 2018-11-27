@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.xugter.cooridnatorlayoutstudy.first.FirstActivity;
+import com.xugter.cooridnatorlayoutstudy.scroll.ScrollActivity;
 import com.xugter.cooridnatorlayoutstudy.simpletitle.SimpleTitleActivity;
 import com.xugter.cooridnatorlayoutstudy.test.TestActivity;
 
@@ -27,5 +28,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void first(View view) {
         startActivity(new Intent(this, FirstActivity.class));
+    }
+
+    public void scroll(View view) {
+        startActivity(new Intent(this, ScrollActivity.class));
     }
 }
