@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.xugter.cooridnatorlayoutstudy.simpleTitle.SimpleTitleActivity;
+import com.xugter.cooridnatorlayoutstudy.simpletitle.SimpleTitleActivity;
 
 public class MainActivity extends AppCompatActivity {
 

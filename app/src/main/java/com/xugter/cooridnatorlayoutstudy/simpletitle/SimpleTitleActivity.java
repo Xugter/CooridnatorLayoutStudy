@@ -1,4 +1,4 @@
-package com.xugter.cooridnatorlayoutstudy.simpleTitle;
+package com.xugter.cooridnatorlayoutstudy.simpletitle;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
