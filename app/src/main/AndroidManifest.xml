@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".simpletitle.SimpleTitleActivity" />
         <activity android:name=".test.TestActivity" />
+        <activity android:name=".first.FirstActivity" />
     </application>
 
 </manifest>

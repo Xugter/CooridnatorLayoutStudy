@@ -7,13 +7,19 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="simpleTitle"
-        android:text="SimpleTitle" />
+        android:onClick="test"
+        android:text="Test" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="test"
-        android:text="Test" />
+        android:onClick="first"
+        android:text="First" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="simpleTitle"
+        android:text="SimpleTitle" />
 
 </LinearLayout>
