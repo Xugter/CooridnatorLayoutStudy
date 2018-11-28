@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.xugter.cooridnatorlayoutstudy.base.BaseActivity;
 import com.xugter.cooridnatorlayoutstudy.first.FirstActivity;
 import com.xugter.cooridnatorlayoutstudy.scroll.ScrollActivity;
 import com.xugter.cooridnatorlayoutstudy.simpletitle.SimpleTitleActivity;
@@ -37,5 +38,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void xiami(View view) {
         startActivity(new Intent(this, XiamiActivity.class));
+    }
+
+    public void base(View view) {
+        startActivity(new Intent(this, BaseActivity.class));
     }
 }
