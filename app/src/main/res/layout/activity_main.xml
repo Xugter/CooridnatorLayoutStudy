@@ -28,4 +28,10 @@
         android:onClick="simpleTitle"
         android:text="SimpleTitle" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="xiami"
+        android:text="Xiami" />
+
 </LinearLayout>

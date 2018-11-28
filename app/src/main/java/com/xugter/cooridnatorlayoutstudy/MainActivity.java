@@ -9,6 +9,7 @@ import com.xugter.cooridnatorlayoutstudy.first.FirstActivity;
 import com.xugter.cooridnatorlayoutstudy.scroll.ScrollActivity;
 import com.xugter.cooridnatorlayoutstudy.simpletitle.SimpleTitleActivity;
 import com.xugter.cooridnatorlayoutstudy.test.TestActivity;
+import com.xugter.cooridnatorlayoutstudy.xiami.XiamiActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,5 +33,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void scroll(View view) {
         startActivity(new Intent(this, ScrollActivity.class));
+    }
+
+    public void xiami(View view) {
+        startActivity(new Intent(this, XiamiActivity.class));
     }
 }
