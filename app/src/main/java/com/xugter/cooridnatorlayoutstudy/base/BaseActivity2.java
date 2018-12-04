@@ -6,11 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.xugter.cooridnatorlayoutstudy.R;
 
-public class BaseActivity extends AppCompatActivity {
+public class BaseActivity2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_base);
+        setContentView(R.layout.activity_base2);
     }
 }

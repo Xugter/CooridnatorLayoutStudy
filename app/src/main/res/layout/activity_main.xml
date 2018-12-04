@@ -46,8 +46,14 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="base"
-                android:text="基本使用" />
+                android:onClick="base1"
+                android:text="基本使用1" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="base2"
+                android:text="基本使用2" />
         </LinearLayout>
 
     </ScrollView>
