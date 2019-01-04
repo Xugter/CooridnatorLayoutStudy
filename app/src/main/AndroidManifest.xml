@@ -21,7 +21,9 @@
         <activity android:name=".scroll.ScrollActivity" />
         <activity android:name=".xiami.XiamiActivity" />
         <activity android:name=".base.BaseActivity1" />
-        <activity android:name=".base.BaseActivity2" />
+        <activity
+            android:name=".base.BaseActivity2"
+            android:theme="@style/ToolbarTheme" />
     </application>
 
 </manifest>
