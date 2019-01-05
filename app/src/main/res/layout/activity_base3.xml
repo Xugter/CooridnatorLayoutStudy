@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xugter.cooridnatorlayoutstudy.other.TouchView
+        android:id="@+id/view_host"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        app:layout_insetEdge="top" />
+
+    <View
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/colorAccent"
+        app:layout_anchor="@id/view_host"
+        app:layout_anchorGravity="bottom|end" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@android:color/black"
+        app:layout_dodgeInsetEdges="top" />
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:background="@android:color/holo_blue_bright"
+        app:layout_dodgeInsetEdges="bottom" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_dialog_email"
+        app:backgroundTint="@color/colorPrimary"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:pressedTranslationZ="25dp" />
+
+</android.support.design.widget.CoordinatorLayout>

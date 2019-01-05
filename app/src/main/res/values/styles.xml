@@ -7,8 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
-    <style name="ToolbarTheme" parent="AppTheme">
-        <item name="android:textColorPrimary">@android:color/white</item>
+    <style name="AppTheme.TextAppearance" parent="android:TextAppearance.Medium">
+        <item name="android:textColor">@android:color/holo_red_light</item>
     </style>
 </resources>

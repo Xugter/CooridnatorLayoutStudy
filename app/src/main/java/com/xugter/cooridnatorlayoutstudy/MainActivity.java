@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.xugter.cooridnatorlayoutstudy.base.BaseActivity1;
 import com.xugter.cooridnatorlayoutstudy.base.BaseActivity2;
+import com.xugter.cooridnatorlayoutstudy.base.BaseActivity3;
 import com.xugter.cooridnatorlayoutstudy.first.FirstActivity;
 import com.xugter.cooridnatorlayoutstudy.scroll.ScrollActivity;
 import com.xugter.cooridnatorlayoutstudy.simpletitle.SimpleTitleActivity;
@@ -47,5 +48,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void base2(View view) {
         startActivity(new Intent(this, BaseActivity2.class));
+    }
+
+    public void base3(View view) {
+        startActivity(new Intent(this, BaseActivity3.class));
     }
 }
