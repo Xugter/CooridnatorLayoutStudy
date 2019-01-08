@@ -41,19 +41,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="first"
-                android:text="First" />
+                android:text="Behavior基础1" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="scroll"
-                android:text="Scroll" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="simpleTitle"
-                android:text="SimpleTitle" />
+                android:text="Behavior基础2" />
 
             <Button
                 android:layout_width="match_parent"

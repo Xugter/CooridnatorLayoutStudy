@@ -15,7 +15,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".simpletitle.SimpleTitleActivity" />
         <activity android:name=".test.TestActivity" />
         <activity android:name=".first.FirstActivity" />
         <activity android:name=".scroll.ScrollActivity" />

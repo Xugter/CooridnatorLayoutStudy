@@ -10,7 +10,6 @@ import com.xugter.cooridnatorlayoutstudy.base.BaseActivity2;
 import com.xugter.cooridnatorlayoutstudy.base.BaseActivity3;
 import com.xugter.cooridnatorlayoutstudy.first.FirstActivity;
 import com.xugter.cooridnatorlayoutstudy.scroll.ScrollActivity;
-import com.xugter.cooridnatorlayoutstudy.simpletitle.SimpleTitleActivity;
 import com.xugter.cooridnatorlayoutstudy.test.TestActivity;
 import com.xugter.cooridnatorlayoutstudy.xiami.XiamiActivity;
 
@@ -20,10 +19,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-
-    public void simpleTitle(View view) {
-        startActivity(new Intent(this, SimpleTitleActivity.class));
     }
 
     public void test(View view) {

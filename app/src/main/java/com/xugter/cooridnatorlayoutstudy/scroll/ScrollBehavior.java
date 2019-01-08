@@ -32,7 +32,13 @@ public class ScrollBehavior extends CoordinatorLayout.Behavior<View> {
     public void onNestedPreScroll(@NonNull CoordinatorLayout coordinatorLayout, @NonNull View child, @NonNull View target, int dx, int dy, @NonNull int[] consumed, int type) {
         Log.d(TAG, "onNestedPreScroll");
         super.onNestedPreScroll(coordinatorLayout, child, target, dx, dy, consumed, type);
-        ViewCompat.offsetTopAndBottom(child, dy);
+        if (child.getY() + dy < 0) {
+            ViewCompat.offsetTopAndBottom(child, (int) (0 - child.getY()));
+        } else if (child.getY() + dy > coordinatorLayout.getHeight() - child.getHeight()) {
+            ViewCompat.offsetTopAndBottom(child, (int) (coordinatorLayout.getHeight() - child.getHeight() - child.getY()));
+        } else {
+            ViewCompat.offsetTopAndBottom(child, dy);
+        }
     }
 
     @Override
@@ -50,14 +56,14 @@ public class ScrollBehavior extends CoordinatorLayout.Behavior<View> {
     @Override
     public boolean onNestedPreFling(@NonNull CoordinatorLayout coordinatorLayout, @NonNull View child, @NonNull View target, float velocityX, float velocityY) {
         Log.d(TAG, "onNestedPreFling");
-        if (velocityY > 0) {
-            child.animate().scaleX(2.0f).scaleY(2.0f).setDuration(2000).start();
-            child.animate().alpha(0).setDuration(2000).start();
-        } else {
-            child.animate().scaleX(1.0f).scaleY(1.0f).setDuration(2000).start();
-            child.animate().alpha(1).setDuration(2000).start();
-        }
-        return false/*super.onNestedPreFling(coordinatorLayout, child, target, velocityX, velocityY)*/;
+//        if (velocityY > 0) {
+//            child.animate().scaleX(2.0f).scaleY(2.0f).setDuration(2000).start();
+//            child.animate().alpha(0).setDuration(2000).start();
+//        } else {
+//            child.animate().scaleX(1.0f).scaleY(1.0f).setDuration(2000).start();
+//            child.animate().alpha(1).setDuration(2000).start();
+//        }
+        return super.onNestedPreFling(coordinatorLayout, child, target, velocityX, velocityY);
     }
 
     @Override
