@@ -16,12 +16,6 @@
             android:scaleType="centerCrop"
             android:src="@drawable/fun"
             app:layout_scrollFlags="scroll|enterAlways" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:background="@color/colorPrimary" />
-
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.NestedScrollView
