@@ -22,6 +22,24 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="base1"
+                android:text="基本使用1" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="base2"
+                android:text="基本使用2" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="base3"
+                android:text="基本使用3" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:onClick="first"
                 android:text="First" />
 
@@ -43,23 +61,6 @@
                 android:onClick="xiami"
                 android:text="Xiami" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="base1"
-                android:text="基本使用1" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="base2"
-                android:text="基本使用2" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="base3"
-                android:text="基本使用3" />
         </LinearLayout>
 
     </ScrollView>
