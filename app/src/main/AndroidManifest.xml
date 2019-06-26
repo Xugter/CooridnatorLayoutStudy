@@ -22,6 +22,7 @@
         <activity android:name=".base.BaseActivity1" />
         <activity android:name=".base.BaseActivity2" />
         <activity android:name=".base.BaseActivity3" />
+        <activity android:name=".realxiami.RealXiamiActivity" />
     </application>
 
 </manifest>

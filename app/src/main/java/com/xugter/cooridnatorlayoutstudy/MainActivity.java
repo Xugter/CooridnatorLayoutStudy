@@ -9,6 +9,7 @@ import com.xugter.cooridnatorlayoutstudy.base.BaseActivity1;
 import com.xugter.cooridnatorlayoutstudy.base.BaseActivity2;
 import com.xugter.cooridnatorlayoutstudy.base.BaseActivity3;
 import com.xugter.cooridnatorlayoutstudy.first.FirstActivity;
+import com.xugter.cooridnatorlayoutstudy.realxiami.RealXiamiActivity;
 import com.xugter.cooridnatorlayoutstudy.scroll.ScrollActivity;
 import com.xugter.cooridnatorlayoutstudy.test.TestActivity;
 import com.xugter.cooridnatorlayoutstudy.xiami.XiamiActivity;
@@ -47,5 +48,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void base3(View view) {
         startActivity(new Intent(this, BaseActivity3.class));
+    }
+
+    public void realxiami(View view) {
+        startActivity(new Intent(this, RealXiamiActivity.class));
     }
 }

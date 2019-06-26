@@ -55,6 +55,12 @@
                 android:onClick="xiami"
                 android:text="虾米" />
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="realxiami"
+                android:text="真虾米" />
+
         </LinearLayout>
 
     </ScrollView>
