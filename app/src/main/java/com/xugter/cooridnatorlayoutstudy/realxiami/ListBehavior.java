@@ -6,22 +6,59 @@ import android.support.design.widget.CoordinatorLayout;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.xugter.cooridnatorlayoutstudy.R;
+import com.xugter.cooridnatorlayoutstudy.other.DisplayUtils;
 
 public class ListBehavior extends CoordinatorLayout.Behavior<View> {
 
+    private int searchBarHeight = 0;
+    private int headerHeight = 0;
+    private int bannerHeight = 0;
+    private int bottomHeight = 0;
+
     public ListBehavior(Context context, AttributeSet attrs) {
         super(context, attrs);
+        searchBarHeight = DisplayUtils.dp2px(context, 45);
+        headerHeight = DisplayUtils.dp2px(context, 48);
+        bannerHeight = DisplayUtils.dp2px(context, 127);
+        bottomHeight = DisplayUtils.dp2px(context, 43);
     }
 
     @Override
-    public boolean layoutDependsOn(@NonNull CoordinatorLayout parent, @NonNull View child, @NonNull View dependency) {
-        return dependency.getId() == R.id.img_banner;
-    }
-
-    @Override
-    public boolean onDependentViewChanged(@NonNull CoordinatorLayout parent, @NonNull View child, @NonNull View dependency) {
-        child.setTranslationY(dependency.getY() + dependency.getHeight());
+    public boolean onLayoutChild(@NonNull CoordinatorLayout parent, @NonNull View child, int layoutDirection) {
+        child.layout(0, searchBarHeight + headerHeight + bannerHeight, child.getMeasuredWidth(),
+                parent.getMeasuredHeight() - bottomHeight);
         return true;
+    }
+
+    @Override
+    public boolean onStartNestedScroll(@NonNull CoordinatorLayout coordinatorLayout, @NonNull View child, @NonNull View directTargetChild, @NonNull View target, int axes, int type) {
+        return child.getY() >= headerHeight && child.getY() <= searchBarHeight + headerHeight + bannerHeight;
+    }
+
+    @Override
+    public void onNestedPreScroll(@NonNull CoordinatorLayout coordinatorLayout, @NonNull View child, @NonNull View target, int dx, int dy, @NonNull int[] consumed, int type) {
+        if (dy > 0) {
+            if (child.getY() > headerHeight) {
+                float targetPos = child.getY() - dy;
+                if (targetPos > headerHeight) {
+                    child.setY(targetPos);
+                    consumed[1] = dy;
+                } else {
+                    consumed[1] = (int) child.getY() - headerHeight;
+                    child.setY(headerHeight);
+                }
+            }
+        } else {
+            if (child.getY() < searchBarHeight + headerHeight + bannerHeight) {
+                float targetPos = child.getY() - dy;
+                if (targetPos < searchBarHeight + headerHeight + bannerHeight) {
+                    child.setY(targetPos);
+                    consumed[1] = dy;
+                } else {
+                    consumed[1] = (int) child.getY() - searchBarHeight + headerHeight + bannerHeight;
+                    child.setY(searchBarHeight + headerHeight + bannerHeight);
+                }
+            }
+        }
     }
 }

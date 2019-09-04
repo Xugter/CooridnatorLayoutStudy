@@ -29,6 +29,7 @@
         app:layout_behavior=".realxiami.BannerBehavior" />
 
     <android.support.v4.widget.NestedScrollView
+        android:id="@+id/view_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="43dp"
