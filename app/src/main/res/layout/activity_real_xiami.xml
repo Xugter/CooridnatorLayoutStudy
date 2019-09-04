@@ -42,78 +42,91 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="81dp"
+                android:onClick="useless"
                 android:scaleType="fitXY"
                 android:src="@drawable/xiami_tab" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="49dp"
+                android:onClick="useless"
                 android:scaleType="fitXY"
                 android:src="@drawable/xiami_list_title" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="162dp"
+                android:onClick="useless"
                 android:scaleType="fitXY"
                 android:src="@drawable/xiami_list_item" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="162dp"
+                android:onClick="useless"
                 android:scaleType="fitXY"
                 android:src="@drawable/xiami_list_item" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="49dp"
+                android:onClick="useless"
                 android:scaleType="fitXY"
                 android:src="@drawable/xiami_list_title" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="162dp"
+                android:onClick="useless"
                 android:scaleType="fitXY"
                 android:src="@drawable/xiami_list_item" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="162dp"
+                android:onClick="useless"
                 android:scaleType="fitXY"
                 android:src="@drawable/xiami_list_item" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="49dp"
+                android:onClick="useless"
                 android:scaleType="fitXY"
                 android:src="@drawable/xiami_list_title" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="162dp"
+                android:onClick="useless"
                 android:scaleType="fitXY"
                 android:src="@drawable/xiami_list_item" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="162dp"
+                android:onClick="useless"
                 android:scaleType="fitXY"
                 android:src="@drawable/xiami_list_item" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="49dp"
+                android:onClick="useless"
                 android:scaleType="fitXY"
                 android:src="@drawable/xiami_list_title" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="162dp"
+                android:onClick="useless"
                 android:scaleType="fitXY"
                 android:src="@drawable/xiami_list_item" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="162dp"
+                android:onClick="useless"
                 android:scaleType="fitXY"
                 android:src="@drawable/xiami_list_item" />
 

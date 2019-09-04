@@ -21,7 +21,7 @@ public class BannerBehavior extends CoordinatorLayout.Behavior<View> {
 
     @Override
     public boolean onDependentViewChanged(@NonNull CoordinatorLayout parent, @NonNull View child, @NonNull View dependency) {
-        child.setTranslationY(dependency.getHeight() + dependency.getTranslationY());
+        child.setTranslationY(dependency.getHeight() + dependency.getY());
         return super.onDependentViewChanged(parent, child, dependency);
     }
 }
