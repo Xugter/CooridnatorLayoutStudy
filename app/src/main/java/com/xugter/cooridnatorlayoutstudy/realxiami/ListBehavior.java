@@ -25,8 +25,8 @@ public class ListBehavior extends CoordinatorLayout.Behavior<View> {
 
     @Override
     public boolean onLayoutChild(@NonNull CoordinatorLayout parent, @NonNull View child, int layoutDirection) {
-        child.layout(0, searchBarHeight + headerHeight + bannerHeight, child.getMeasuredWidth(),
-                parent.getMeasuredHeight() - bottomHeight);
+        child.layout(0, headerHeight, child.getMeasuredWidth(), parent.getMeasuredHeight() - bottomHeight);
+        child.setY(searchBarHeight + headerHeight + bannerHeight);
         return true;
     }
 
