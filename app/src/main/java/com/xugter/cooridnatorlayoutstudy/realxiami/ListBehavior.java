@@ -37,6 +37,9 @@ public class ListBehavior extends CoordinatorLayout.Behavior<View> {
 
     @Override
     public void onNestedPreScroll(@NonNull CoordinatorLayout coordinatorLayout, @NonNull View child, @NonNull View target, int dx, int dy, @NonNull int[] consumed, int type) {
+        if (child.getScrollY() > 0) {
+            return;
+        }
         if (dy > 0) {
             if (child.getY() > headerHeight) {
                 float targetPos = child.getY() - dy;
