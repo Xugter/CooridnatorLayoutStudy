@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.design.widget.CoordinatorLayout;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.view.View;
 
 import com.xugter.cooridnatorlayoutstudy.other.DisplayUtils;
@@ -14,6 +15,9 @@ public class ListBehavior extends CoordinatorLayout.Behavior<View> {
     private int headerHeight = 0;
     private int bannerHeight = 0;
     private int bottomHeight = 0;
+
+    private boolean startPos = true;
+    private int scrollMode = 0;
 
     public ListBehavior(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -32,36 +36,62 @@ public class ListBehavior extends CoordinatorLayout.Behavior<View> {
 
     @Override
     public boolean onStartNestedScroll(@NonNull CoordinatorLayout coordinatorLayout, @NonNull View child, @NonNull View directTargetChild, @NonNull View target, int axes, int type) {
-        return child.getY() >= headerHeight && child.getY() <= searchBarHeight + headerHeight + bannerHeight;
+        return true;
+    }
+
+    @Override
+    public boolean onTouchEvent(@NonNull CoordinatorLayout parent, @NonNull View child, @NonNull MotionEvent ev) {
+        return super.onTouchEvent(parent, child, ev);
+    }
+
+    @Override
+    public boolean onInterceptTouchEvent(@NonNull CoordinatorLayout parent, @NonNull View child, @NonNull MotionEvent ev) {
+        if (ev.getAction() == 0) {
+            if (child.getScrollY() > 0) {
+                startPos = false;
+            } else {
+                startPos = true;
+            }
+            scrollMode = 0;
+        }
+        return super.onInterceptTouchEvent(parent, child, ev);
     }
 
     @Override
     public void onNestedPreScroll(@NonNull CoordinatorLayout coordinatorLayout, @NonNull View child, @NonNull View target, int dx, int dy, @NonNull int[] consumed, int type) {
-        if (child.getScrollY() > 0) {
-            return;
-        }
-        if (dy > 0) {
-            if (child.getY() > headerHeight) {
-                float targetPos = child.getY() - dy;
-                if (targetPos > headerHeight) {
-                    child.setY(targetPos);
-                    consumed[1] = dy;
+        if (startPos) {
+            if (scrollMode == 0) {
+                if (child.getY() == headerHeight) {
+                    if (dy > 0) {
+                        scrollMode = 1;
+                    } else {
+                        scrollMode = -1;
+                    }
                 } else {
-                    consumed[1] = (int) child.getY() - headerHeight;
-                    child.setY(headerHeight);
+                    scrollMode = -1;
                 }
             }
-        } else {
-            if (child.getY() < searchBarHeight + headerHeight + bannerHeight) {
-                float targetPos = child.getY() - dy;
-                if (targetPos < searchBarHeight + headerHeight + bannerHeight) {
-                    child.setY(targetPos);
-                    consumed[1] = dy;
-                } else {
-                    consumed[1] = (int) child.getY() - searchBarHeight + headerHeight + bannerHeight;
-                    child.setY(searchBarHeight + headerHeight + bannerHeight);
+            if (scrollMode > 0) return;
+            if (dy > 0) {
+                if (child.getY() > headerHeight) {
+                    float targetPos = child.getY() - dy;
+                    if (targetPos > headerHeight) {
+                        child.setY(targetPos);
+                    } else {
+                        child.setY(headerHeight);
+                    }
+                }
+            } else {
+                if (child.getY() < searchBarHeight + headerHeight + bannerHeight) {
+                    float targetPos = child.getY() - dy;
+                    if (targetPos < searchBarHeight + headerHeight + bannerHeight) {
+                        child.setY(targetPos);
+                    } else {
+                        child.setY(searchBarHeight + headerHeight + bannerHeight);
+                    }
                 }
             }
+            consumed[1] = dy;
         }
     }
 }
