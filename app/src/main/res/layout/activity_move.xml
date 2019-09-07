@@ -13,6 +13,6 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@color/colorAccent"
-        app:layout_behavior="com.xugter.cooridnatorlayoutstudy.part2.first.MoveBehavior" />
+        app:layout_behavior="com.xugter.cooridnatorlayoutstudy.part2.move.MoveBehavior" />
 
 </android.support.design.widget.CoordinatorLayout>

@@ -1,4 +1,4 @@
-package com.xugter.cooridnatorlayoutstudy.part2.first;
+package com.xugter.cooridnatorlayoutstudy.part2.move;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

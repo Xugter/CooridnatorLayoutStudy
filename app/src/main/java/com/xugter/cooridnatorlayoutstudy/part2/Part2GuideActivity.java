@@ -7,7 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.xugter.cooridnatorlayoutstudy.R;
-import com.xugter.cooridnatorlayoutstudy.part2.first.MoveActivity;
+import com.xugter.cooridnatorlayoutstudy.part2.move.MoveActivity;
+import com.xugter.cooridnatorlayoutstudy.part2.layout.LayoutActivity;
 import com.xugter.cooridnatorlayoutstudy.part2.scroll.ScrollActivity;
 
 public class Part2GuideActivity extends AppCompatActivity {
@@ -24,5 +25,9 @@ public class Part2GuideActivity extends AppCompatActivity {
 
     public void scroll(View view) {
         startActivity(new Intent(this, ScrollActivity.class));
+    }
+
+    public void layout(View view) {
+        startActivity(new Intent(this, LayoutActivity.class));
     }
 }
