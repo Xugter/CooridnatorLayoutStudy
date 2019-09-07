@@ -8,7 +8,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@color/colorPrimary"
-        app:layout_behavior="com.xugter.cooridnatorlayoutstudy.scroll.ScrollBehavior" />
+        app:layout_behavior="com.xugter.cooridnatorlayoutstudy.part2.scroll.ScrollBehavior" />
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"

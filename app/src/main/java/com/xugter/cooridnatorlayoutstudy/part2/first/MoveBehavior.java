@@ -1,4 +1,4 @@
-package com.xugter.cooridnatorlayoutstudy.first;
+package com.xugter.cooridnatorlayoutstudy.part2.first;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -8,9 +8,9 @@ import android.view.View;
 
 import com.xugter.cooridnatorlayoutstudy.other.TouchView;
 
-public class FirstBehavior extends CoordinatorLayout.Behavior<View> {
+public class MoveBehavior extends CoordinatorLayout.Behavior<View> {
 
-    public FirstBehavior(Context context, AttributeSet attrs) {
+    public MoveBehavior(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 

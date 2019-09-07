@@ -15,13 +15,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".test.TestActivity" />
-        <activity android:name=".first.FirstActivity" />
-        <activity android:name=".scroll.ScrollActivity" />
+        <activity android:name=".part1.Part1GuideActivity" />
+        <activity android:name=".part1.BaseActivity1" />
+        <activity android:name=".part1.BaseActivity2" />
+        <activity android:name=".part1.BaseActivity3" />
+        <activity android:name=".part2.Part2GuideActivity" />
+        <activity android:name=".part2.first.MoveActivity" />
+        <activity android:name=".part2.scroll.ScrollActivity" />
         <activity android:name=".xiami.XiamiActivity" />
-        <activity android:name=".base.BaseActivity1" />
-        <activity android:name=".base.BaseActivity2" />
-        <activity android:name=".base.BaseActivity3" />
         <activity android:name=".realxiami.RealXiamiActivity" />
     </application>
 

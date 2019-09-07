@@ -1,4 +1,4 @@
-package com.xugter.cooridnatorlayoutstudy.base;
+package com.xugter.cooridnatorlayoutstudy.part1;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

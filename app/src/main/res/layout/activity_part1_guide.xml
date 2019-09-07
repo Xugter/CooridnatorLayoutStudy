@@ -16,26 +16,20 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="part1"
-                android:text="(一)基本使用" />
+                android:onClick="base1"
+                android:text="Base1" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="part2"
-                android:text="(二)Behavior基础" />
+                android:onClick="base2"
+                android:text="Base2" />
 
-            <!--<Button-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:onClick="part3"-->
-            <!--android:text="(三)ViewCompat" />-->
-
-            <!--<Button-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:onClick="part4"-->
-            <!--android:text="Behavior事件流程" />-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="base3"
+                android:text="Base3" />
 
         </LinearLayout>
 

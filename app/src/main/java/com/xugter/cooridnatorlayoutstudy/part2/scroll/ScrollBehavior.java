@@ -1,4 +1,4 @@
-package com.xugter.cooridnatorlayoutstudy.scroll;
+package com.xugter.cooridnatorlayoutstudy.part2.scroll;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
