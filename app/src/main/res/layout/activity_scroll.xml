@@ -29,6 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:gravity="center"
+                android:onClick="useless"
                 android:text="123" />
 
             <View
@@ -40,6 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:gravity="center"
+                android:onClick="useless"
                 android:text="123" />
 
             <View
@@ -51,6 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:gravity="center"
+                android:onClick="useless"
                 android:text="123" />
 
             <View
@@ -62,6 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:gravity="center"
+                android:onClick="useless"
                 android:text="123" />
 
             <View
@@ -73,6 +77,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:gravity="center"
+                android:onClick="useless"
                 android:text="123" />
 
             <View
@@ -84,6 +89,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:gravity="center"
+                android:onClick="useless"
                 android:text="123" />
 
             <View
@@ -95,6 +101,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:gravity="center"
+                android:onClick="useless"
                 android:text="123" />
 
             <View
@@ -106,6 +113,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:gravity="center"
+                android:onClick="useless"
                 android:text="123" />
 
             <View
@@ -117,6 +125,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:gravity="center"
+                android:onClick="useless"
                 android:text="123" />
 
         </LinearLayout>

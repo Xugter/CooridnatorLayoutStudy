@@ -31,13 +31,18 @@ public class ScrollBehavior extends CoordinatorLayout.Behavior<View> {
     @Override
     public void onNestedPreScroll(@NonNull CoordinatorLayout coordinatorLayout, @NonNull View child, @NonNull View target, int dx, int dy, @NonNull int[] consumed, int type) {
         Log.d(TAG, "onNestedPreScroll");
-        super.onNestedPreScroll(coordinatorLayout, child, target, dx, dy, consumed, type);
         if (child.getY() + dy < 0) {
+            //方块到达顶部，滑动距离消费不完
             ViewCompat.offsetTopAndBottom(child, (int) (0 - child.getY()));
+            consumed[1] = 0 - (int) child.getY();
         } else if (child.getY() + dy > coordinatorLayout.getHeight() - child.getHeight()) {
+            //方块到达底部，滑动距离消费不完
             ViewCompat.offsetTopAndBottom(child, (int) (coordinatorLayout.getHeight() - child.getHeight() - child.getY()));
+            consumed[1] = coordinatorLayout.getHeight() - child.getHeight() - (int) child.getY();
         } else {
+            //方块消费完全部事件
             ViewCompat.offsetTopAndBottom(child, dy);
+            consumed[1] = dy;
         }
     }
 
@@ -56,13 +61,6 @@ public class ScrollBehavior extends CoordinatorLayout.Behavior<View> {
     @Override
     public boolean onNestedPreFling(@NonNull CoordinatorLayout coordinatorLayout, @NonNull View child, @NonNull View target, float velocityX, float velocityY) {
         Log.d(TAG, "onNestedPreFling");
-//        if (velocityY > 0) {
-//            child.animate().scaleX(2.0f).scaleY(2.0f).setDuration(2000).start();
-//            child.animate().alpha(0).setDuration(2000).start();
-//        } else {
-//            child.animate().scaleX(1.0f).scaleY(1.0f).setDuration(2000).start();
-//            child.animate().alpha(1).setDuration(2000).start();
-//        }
         return super.onNestedPreFling(coordinatorLayout, child, target, velocityX, velocityY);
     }
 

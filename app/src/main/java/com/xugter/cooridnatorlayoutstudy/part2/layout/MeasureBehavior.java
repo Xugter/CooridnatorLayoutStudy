@@ -22,6 +22,7 @@ public class MeasureBehavior extends CoordinatorLayout.Behavior<View> {
         int newHeightMeasureSpec = View.MeasureSpec.makeMeasureSpec(300, View.MeasureSpec.EXACTLY);
         int newWidthMeasureSpec = View.MeasureSpec.makeMeasureSpec(500, View.MeasureSpec.EXACTLY);
         parent.onMeasureChild(child, newWidthMeasureSpec, widthUsed, newHeightMeasureSpec, heightUsed);
+        Log.i("MeasureBehavior", "onMeasureChild==========w=" + child.getMeasuredWidth() + "   h=" + child.getMeasuredHeight());
         return true;
     }
 
