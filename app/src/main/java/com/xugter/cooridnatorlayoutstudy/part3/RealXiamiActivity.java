@@ -1,4 +1,4 @@
-package com.xugter.cooridnatorlayoutstudy.realxiami;
+package com.xugter.cooridnatorlayoutstudy.part3;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

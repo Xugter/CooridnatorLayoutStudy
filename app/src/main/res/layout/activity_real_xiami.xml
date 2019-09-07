@@ -10,7 +10,7 @@
         android:layout_height="45dp"
         android:scaleType="fitXY"
         android:src="@drawable/xiami_search"
-        app:layout_behavior=".realxiami.SearchBarBehavior" />
+        app:layout_behavior="com.xugter.cooridnatorlayoutstudy.part3.SearchBarBehavior" />
 
     <ImageView
         android:id="@+id/img_header"
@@ -18,7 +18,7 @@
         android:layout_height="48dp"
         android:scaleType="fitXY"
         android:src="@drawable/xiami_header"
-        app:layout_behavior=".realxiami.HeaderBehavior" />
+        app:layout_behavior="com.xugter.cooridnatorlayoutstudy.part3.HeaderBehavior" />
 
     <ImageView
         android:id="@+id/img_banner"
@@ -26,14 +26,14 @@
         android:layout_height="127dp"
         android:scaleType="fitXY"
         android:src="@drawable/xiami_banner"
-        app:layout_behavior=".realxiami.BannerBehavior" />
+        app:layout_behavior="com.xugter.cooridnatorlayoutstudy.part3.BannerBehavior" />
 
     <android.support.v4.widget.NestedScrollView
         android:id="@+id/view_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="43dp"
-        app:layout_behavior=".realxiami.ListBehavior">
+        app:layout_behavior="com.xugter.cooridnatorlayoutstudy.part3.ListBehavior">
 
         <LinearLayout
             android:layout_width="match_parent"

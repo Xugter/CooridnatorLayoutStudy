@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.xugter.cooridnatorlayoutstudy.part1.Part1GuideActivity;
 import com.xugter.cooridnatorlayoutstudy.part2.Part2GuideActivity;
+import com.xugter.cooridnatorlayoutstudy.part3.RealXiamiActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,5 +23,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void part2(View view) {
         startActivity(new Intent(this, Part2GuideActivity.class));
+    }
+
+    public void part3(View view) {
+        startActivity(new Intent(this, RealXiamiActivity.class));
     }
 }

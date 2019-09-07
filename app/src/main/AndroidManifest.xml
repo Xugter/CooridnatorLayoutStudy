@@ -23,8 +23,8 @@
         <activity android:name=".part2.move.MoveActivity" />
         <activity android:name=".part2.scroll.ScrollActivity" />
         <activity android:name=".part2.layout.LayoutActivity" />
+        <activity android:name=".part3.RealXiamiActivity" />
         <activity android:name=".xiami.XiamiActivity" />
-        <activity android:name=".realxiami.RealXiamiActivity" />
     </application>
 
 </manifest>
