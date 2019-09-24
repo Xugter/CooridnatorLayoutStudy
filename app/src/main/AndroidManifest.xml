@@ -24,6 +24,7 @@
         <activity android:name=".part2.scroll.ScrollActivity" />
         <activity android:name=".part2.layout.LayoutActivity" />
         <activity android:name=".part3.RealXiamiActivity" />
+        <activity android:name=".part4.NestXiaMiActivity" />
         <activity android:name=".xiami.XiamiActivity" />
     </application>
 

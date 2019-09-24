@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xugter.cooridnatorlayoutstudy.part4.XCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_search"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/xiami_search" />
+
+    <ImageView
+        android:id="@+id/img_header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/xiami_header" />
+
+    <ImageView
+        android:id="@+id/img_banner"
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/xiami_banner" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/view_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="43dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:onClick="useless"
+                android:scaleType="fitXY"
+                android:src="@drawable/xiami_tab" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:onClick="useless"
+                android:scaleType="fitXY"
+                android:src="@drawable/xiami_list_title" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="162dp"
+                android:onClick="useless"
+                android:scaleType="fitXY"
+                android:src="@drawable/xiami_list_item" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="162dp"
+                android:onClick="useless"
+                android:scaleType="fitXY"
+                android:src="@drawable/xiami_list_item" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:onClick="useless"
+                android:scaleType="fitXY"
+                android:src="@drawable/xiami_list_title" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="162dp"
+                android:onClick="useless"
+                android:scaleType="fitXY"
+                android:src="@drawable/xiami_list_item" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="162dp"
+                android:onClick="useless"
+                android:scaleType="fitXY"
+                android:src="@drawable/xiami_list_item" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:onClick="useless"
+                android:scaleType="fitXY"
+                android:src="@drawable/xiami_list_title" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="162dp"
+                android:onClick="useless"
+                android:scaleType="fitXY"
+                android:src="@drawable/xiami_list_item" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="162dp"
+                android:onClick="useless"
+                android:scaleType="fitXY"
+                android:src="@drawable/xiami_list_item" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:onClick="useless"
+                android:scaleType="fitXY"
+                android:src="@drawable/xiami_list_title" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="162dp"
+                android:onClick="useless"
+                android:scaleType="fitXY"
+                android:src="@drawable/xiami_list_item" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="162dp"
+                android:onClick="useless"
+                android:scaleType="fitXY"
+                android:src="@drawable/xiami_list_item" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_gravity="bottom"
+        android:scaleType="fitXY"
+        android:src="@drawable/xiami_bottom" />
+
+</com.xugter.cooridnatorlayoutstudy.part4.XCoordinatorLayout>
