@@ -1,7 +1,6 @@
-# CooridnatorLayoutStudy
-CooridnatorLayout学习
-### 第一步:学会使用CoordinatorLayout及官方现成的behavior
+# CooridnatorLayoutStudy学习导航
 
+### 第一步:学会使用CoordinatorLayout及官方现成的behavior
 
 #### 1.通过介绍官方的API,实现简单的demo
 [CoordinatorLayout系列(一):基本使用](https://xugter.xyz/2019/01/01/CoordinatorLayout1)
